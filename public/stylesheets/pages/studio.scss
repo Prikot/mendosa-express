@@ -1,0 +1,141 @@
+.studio-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  flex-flow: column nowrap;
+
+  hr {
+    display: none;
+    @include phones() {
+      display: block;
+      width: 80%;
+      margin-top: 20px;
+    }
+  }
+
+  .studio,
+  .studio_reverse {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 65vh;
+    min-height: 600px;
+    @include desktop() {
+      min-height: 350px;
+      height: 60vh;
+
+    }
+
+    @include tablets() {
+      min-height: 350px;
+      height: 50vh;
+    }
+    @include laptop() {
+      min-height: 400px;
+
+      //height: 50vh;
+    }
+    @include tablets() {
+      //height: 42vh;
+    }
+
+    @include phones() {
+      flex-flow: row wrap;
+      height: auto;
+
+    }
+    &__img {
+      height: 430px;
+      flex: 2 1 300px;
+      margin: 40px;
+      align-content: flex-end;
+      border-radius: 8px;
+
+      @include desktop() {
+        height: 350px;
+
+      }
+      @include laptop() {
+        height: 350px;
+
+      }
+      @include tablets() {
+        height: 300px;
+        width: 300px;
+        flex: 1 1 auto;
+        margin: 10px;
+      }
+    }
+    &__img.item-1 {
+      background: url(/assets/img/studio-page/process-9.jpg) center center no-repeat;
+      background-size: cover;
+    }
+    &__img.item-2 {
+      background: url(/assets/img/studio-page/process-8.jpg) center center no-repeat;
+      background-size: cover;
+    }
+    &__img.item-3 {
+      background: url(/assets/img/studio-page/process-7.jpg) center center no-repeat;
+      background-size: cover;
+    }
+
+    &__img.item-4 {
+      background: url(/assets/img/studio-page/process-6.jpg) center center no-repeat;
+      background-size: cover;
+    }
+
+    &__img.item-5 {
+      background: url(/assets/img/studio-page/process-5.jpg) center center no-repeat;
+      background-size: cover;
+    }
+    &__img.item-6 {
+      background: url(/assets/img/studio-page/process-4.jpg) center center no-repeat;
+      background-size: cover;
+    }
+    &__img.item-7 {
+      background: url(/assets/img/studio-page/process-3.jpg) center center no-repeat;
+      background-size: cover;
+    }
+    &__img.item-8 {
+      background: url(/assets/img/studio-page/process-2.jpg) center center no-repeat;
+      background-size: cover;
+    }
+    &__img.item-9 {
+      background: url(/assets/img/studio-page/process-1.jpg) center center no-repeat;
+      background-size: cover;
+    }
+
+    &__text {
+      margin: 40px;
+      margin-top: 0;
+      color: #504f51;
+      font-size: 16px;
+      line-height: 1.75;
+      flex: 1 1 300px;
+      @include laptop() {
+        flex: 1 1 200px;
+      }
+
+      @include tablets() {
+        flex: 1 1 200px;
+      }
+
+      @include tablets() {
+        margin: 25px;
+      }
+    }
+  }
+  .studio_reverse {
+    flex-flow: row-reverse wrap;
+
+    @include tablets() {
+      flex-flow: row-reverse nowrap;
+    }
+    @include phones() {
+      flex-flow: row-reverse wrap;
+    }
+  }
+}

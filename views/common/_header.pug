@@ -1,0 +1,28 @@
+header.header#header
+  .header__background.rotator
+    ul
+      li
+        img.header__slide.header__slide_1(src="/assets/img/banner/test-17-min.jpg")
+      li
+        img.header__slide.header__slide_2(src="/assets/img/banner/test-13-min.jpg")
+      li
+        img.header__slide.header__slide_3(src="/assets/img/banner/test-14-min.jpg")
+      li
+        img.show.header__slide.header__slide_4(src="/assets/img/banner/test-18-min.jpg")
+      li
+        img.header__slide.header__slide_5(src="/assets/img/banner/test-11-min.jpg")
+  a.instagram(target='_blank' href="https://www.instagram.com/tkani_mendosa/")
+    i.instagram__link.fab.fa-instagram
+    span.instagram__title INSTAGRAM
+  include ../common/_menu-mobile
+  +nav("nav", [["Главная","/index.html"], ["О нас","/about.html"], ["Ткани","/tissue.html"], ["Ателье","/studio.html"],
+    ["Шоурум","/showroom.html"], ["Галерея","/gallery.html"], ["Контакты","#footer"]], activeItem)
+  .banner
+    a(href='/index.html').logo-shadow-link
+      .logo-circle
+    .text-container
+      .banner__text Творческая мастерская
+      a(href='#id1').btn-container
+        .go-down.fas.fa-chevron-down
+      .banner__text_it Bellissimi tessuti italiani
+

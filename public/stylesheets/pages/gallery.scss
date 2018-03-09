@@ -1,0 +1,60 @@
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin: 50px auto 50px auto;
+
+  @include laptop() {
+    width: 90%;
+
+  }
+  @include phones() {
+    width: 96%;
+
+  }
+}
+
+.gallery ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+
+  li {
+    margin-right: 3px;
+    width: 100px;
+    @include tablets() {
+      width: 90px;
+
+    }@include phones() {
+       width: 80px;
+
+     }
+  }
+
+  img {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+
+    @include tablets() {
+      width: 90px;
+
+    }
+
+    @include phones() {
+       width: 80px;
+     }
+  }
+}
+.main-img {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+

@@ -1,0 +1,140 @@
+.about-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: column nowrap;
+
+  hr {
+    display: none;
+    @include phones() {
+      display: block;
+      width: 80%;
+      margin-top: 20px;
+    }
+  }
+
+  .about,
+  .about_reverse {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 65vh;
+    min-height: 600px;
+    @include desktop() {
+      min-height: 350px;
+      height: 60vh;
+
+    }
+
+    @include tablets() {
+      min-height: 350px;
+      height: 50vh;
+    }
+    @include laptop() {
+      min-height: 400px;
+
+      //height: 50vh;
+    }
+    @include tablets() {
+      //height: 42vh;
+    }
+
+    @include phones() {
+       flex-flow: row wrap;
+        height: auto;
+
+     }
+
+    &__img {
+      height: 500px;
+      flex: 2 1 300px;
+      margin: 40px;
+      align-content: flex-end;
+
+      @include desktop() {
+        height: 350px;
+
+      }
+      @include laptop() {
+        height: 350px;
+
+      }
+      @include tablets() {
+        height: 300px;
+        width: 300px;
+        flex: 1 1 auto;
+        margin: 10px;
+      }
+    }
+
+    &.item-1 .about__img {
+      background: url(/assets/img/slider/about/about-1-1000.jpg) center center  no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+
+    }
+    &.item-2 .about__img {
+      background: url(/assets/img/slider/about/about-4-1000.jpg) bottom center no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+
+    }
+    &.item-3 .about__img {
+      background: url(/assets/img/slider/about/about-5-1000.jpg) center center no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    &.item-4 .about__img {
+      background: url(/assets/img/slider/showroom/showroom-7-1000.jpg) center center no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+
+    }
+    &.item-5 .about__img {
+      background: url(/assets/img/slider/showroom/showroom-6-1000.jpg) center center no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+
+    }
+
+    &.item-6 .about__img {
+      background: url(/assets/img/slider/showroom/showroom-5-1000.jpg) left center no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+
+    }
+
+    &__text {
+      margin: 40px;
+      margin-top: 0;
+      color: #504f51;
+      font-size: 1.2rem;
+      line-height: 1.75;
+      flex: 1 1 300px;
+      @include laptop() {
+        flex: 1 1 200px;
+      }
+
+      @include tablets() {
+        flex: 1 1 200px;
+      }
+
+      @include tablets() {
+        margin: 25px;
+      }
+    }
+  }
+  .about_reverse {
+    flex-flow: row-reverse wrap;
+
+    @include tablets() {
+      flex-flow: row-reverse nowrap;
+    }
+    @include phones() {
+      flex-flow: row-reverse wrap;
+    }
+  }
+}

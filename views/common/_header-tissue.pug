@@ -1,0 +1,12 @@
+header.header-tissue
+  a.instagram(target='_blank' href="https://www.instagram.com/tkani_mendosa/")
+    i.instagram__link.fab.fa-instagram
+    span.instagram__title INSTAGRAM
+  include ../common/_menu-mobile
+  +nav("nav", [["О нас","/about.html"], ["Ткани","/tissue.html"], ["Ателье","/studio.html"],
+    ["Шоурум","/showroom.html"], ["Галерея","/gallery.html"], ["Контакты","#footer"]], activeItem)
+  .banner-tissue
+    block tissue-title
+
+//"О нас", "Ткани", "Ателье", "Mendosa", "Шоурум", "Галерея", "Контакты"
+//"О нас", "Ткани", "Ателье", "Mendosa", "Шоурум", "Галерея", "Контакты"

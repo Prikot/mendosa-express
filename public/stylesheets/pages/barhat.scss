@@ -1,0 +1,245 @@
+.barhat-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .container {
+    width: 1180px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+
+    @include desktop() {
+      width: 80%;
+    }
+
+    @include laptop() {
+      width: 92%;
+    }
+    @include tablets() {
+      width: 94%;
+    }
+    @include phones() {
+      width: 100%;
+    }
+
+  }
+}
+
+.tissue-title .banner-tissue .banner__text {
+  color:red;
+}
+.barhat__img {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  height: 295px;
+  flex: 1 1 295px;
+  max-width: 300px;
+  overflow-x: hidden;
+  margin: 0 auto;
+
+  @include desktop() {
+    //height: 250px;
+    flex: 1 1 250px;
+    //max-width: 250px;
+
+  }
+
+  @include laptop() {
+    flex: 1 1 200px;
+
+  }
+  @include tablets() {
+    //flex: 1 1 200px;
+    //width: 480px;
+    max-width: auto;
+  }
+  @include phones() {
+
+  }
+
+  .barhat__header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    //align-items: flex-end;
+    left: -100%;
+    top: 15px;
+    transition: left .3s ease-in-out;
+    //background: rgba(0,0,0,0.5);
+    color: #FFF;
+
+    .barhat__title {
+      order:1;
+      margin-top: 0;
+      padding:7px 15px;
+      background-color: rgba(5,112,168,0.5);
+      font-size: 24px;
+      line-height: 1.3;
+      text-align: center;
+      letter-spacing: 1px;
+      //min-width: 100px;
+
+    }
+    .barhat__index {
+      margin-bottom: 0;
+      margin-top: 0;
+      padding:5px 15px;
+      font-size: 20px;
+      line-height: 1.3;
+      background-color: rgba(0,0,0,0.5);
+      text-align: center;
+      //max-width: 80%;
+    }
+  }
+
+  &:hover {
+    .barhat__header {
+      left: 0;
+    }
+  }
+}
+
+.barhat__img.item-1 {
+  background: url(/assets/img/tissue-item-barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1-1.png) top left;
+  background-size: cover;
+}
+.barhat__img.item-2 {
+  background: url(/assets/img/tissue-item-barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1.jpg) top left;
+  background-size: cover;
+}
+.barhat__img.item-3 {
+  background: url(/assets/img/tissue-item-barhat/bt_biryuzovyy_s_zolotom_tg-x0232.jpg) top left;
+  background-size: cover;
+}
+.barhat__img.item-4 {
+  background: url(/assets/img/tissue-item-barhat/bt_bolotnyy_tg74-1.jpg) top left;
+  background-size: cover;
+}
+.barhat__img.item-5 {
+  background: url(/assets/img/tissue-item-barhat/bt_bolotnyy_tg74.jpg) top left;
+  background-size: cover;
+}
+.barhat__img.item-6 {
+  background: url(/assets/img/tissue-item-barhat/bt_bordo_tg76-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-7 {
+  background: url(/assets/img/tissue-item-barhat/bt_bordo_tg76.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-8 {
+  background: url(/assets/img/tissue-item-barhat/bt_chernyy_s_zolotom_tg-x0234-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-9 {
+  background: url(/assets/img/tissue-item-barhat/bt_chernyy_s_zolotom_tg-x0234.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-10 {
+  background: url(/assets/img/tissue-item-barhat/bt_fioletovyy_s_zolotom_tg-x233-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-11 {
+  background: url(/assets/img/tissue-item-barhat/bt_fioletovyy_s_zolotom_tg-x233.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-12 {
+  background: url(/assets/img/tissue-item-barhat/bt_lilovyy_tg75-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-13 {
+  background: url(/assets/img/tissue-item-barhat/bt_lilovyy_tg75.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-14 {
+  background: url(/assets/img/tissue-item-barhat/bt_limon_tg53-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-15 {
+  background: url(/assets/img/tissue-item-barhat/bt_limon_tg53.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-16 {
+  background: url(/assets/img/tissue-item-barhat/bt_persik_tg73-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-17 {
+  background: url(/assets/img/tissue-item-barhat/bt_persik_tg73.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-18 {
+  background: url(/assets/img/tissue-item-barhat/bt_pudra_tg56-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-19 {
+  background: url(/assets/img/tissue-item-barhat/bt_pudra_tg56.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-20 {
+  background: url(/assets/img/tissue-item-barhat/bt_rozovyy_tg_sa-49-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-21 {
+  background: url(/assets/img/tissue-item-barhat/bt_rozovyy_tg_sa-49.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-22 {
+  background: url(/assets/img/tissue-item-barhat/bt_seryy_tg62-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-23 {
+  background: url(/assets/img/tissue-item-barhat/bt_seryy_tg62.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-24 {
+  background: url(/assets/img/tissue-item-barhat/bt_sliva_tg70-1.jpg) top left;
+  background-size: cover;
+}
+
+.barhat__img.item-25 {
+  background: url(/assets/img/tissue-item-barhat/bt_sliva_tg70.jpg) top left;
+  background-size: cover;
+}
+
+.banner_404 {
+    font-family: Roboto, "Helvetica", Helvetica, Arial, sans-serif !important;
+    font-size: 16px;
+  //margin-bottom: 40px;
+
+}
+.link-404 {
+  //text-decoration: none;
+  color: whitesmoke;
+}
+
+.header-tissue .banner-tissue .banner__text.banner_404 {
+  justify-content: center;
+  margin: auto;
+  span {
+    display: block;
+  }
+}
