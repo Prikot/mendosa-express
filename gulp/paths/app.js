@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = [
-  './public/javascripts/app.js',
-  './public/javascripts/owl-carousel.js',
-  './public/javascripts/banner-change.js',
-  './public/javascripts/google_maps.js',
-  './public/javascripts/scroll.js',
-  './public/javascripts/menu.js',
-  './public/javascripts/preloader.js'
+  './source/js/app.js',
+  './source/js/owl-carousel.js',
+  './source/js/banner-change.js',
+  './source/js/google_maps.js',
+  './source/js/scroll.js',
+  './source/js/menu.js',
+  './source/js/preloader.js'
 ];

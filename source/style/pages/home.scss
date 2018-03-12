@@ -1,0 +1,431 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  @include laptop() {
+    width: 90%;
+  }
+  @include phones() {
+    width: 98%;
+  }
+
+  hr {
+    margin: 0;
+    display: none;
+    @include tablets() {
+      display: block;
+      margin-top: 60px;
+      margin-bottom: 0;
+    }
+
+    @include phones() {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+}
+
+section.owl-slider {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding-top: 75px;
+  min-height: 800px;
+  box-sizing: border-box;
+
+  @include desktop() {
+    justify-content: space-between;
+    min-height: 400px;
+    padding-top: 50px;
+  }
+
+  @include laptop() {
+  }
+
+  @include tablets() {
+    justify-content: space-around;
+    height: 90vh;
+
+  }
+
+  @include phones() {
+    justify-content: space-around;
+    padding-top: 0;
+    height: auto;
+  }
+
+  &:first-child {
+    //padding-top: 0;
+
+    @include desktop() {
+      padding-top: 75px;
+    }
+
+    @include laptop() {
+      padding-top: 50px;
+    }
+
+    @include tablets() {
+      //padding-top: 0;
+    }
+  }
+
+  &:last-child {
+    justify-content: flex-start;
+    height: 90vh;
+    margin-bottom: 60px;
+    margin-top: 60px;
+
+    @include desktop() {
+      height: 90vh;
+    }
+    @include laptop() {
+    }
+    @include tablets() {
+      margin-top: 0;
+    }
+
+    @include phones() {
+      height: auto;
+    }
+  }
+
+
+  .btn-container {
+    margin-top: 0;
+    animation: arrow-move 1s ease-in infinite alternate;
+    @include tablets() {
+      animation: none;
+    }
+
+    @include phones() {
+      display: none;
+    }
+
+    .go-down {
+      height: 60px;
+      width: 100%;
+      color: rgba(0,0,0, 0.6);
+    }
+  }
+  
+  .slider-right {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-height: 70vh;
+
+    @include tablets() {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 40vh;
+      min-height: 40vh;
+    }
+
+    @include phones() {
+      //height: 100vh;
+    }
+  }
+
+
+  .slider-text {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 10000;
+    color: white;
+    width: 400px;
+    height: 70vh;
+    background: rgba(0,0,0, 0.6);
+
+    @include laptop() {
+      width: 300px;
+    }
+    @include tablets() {
+      display: none;
+      height: 40vh;
+
+    }
+
+    @include phones() {
+      display: none;
+    }
+
+    &__title {
+      font-family: Kurale-Regular, Roboto, sans-serif;
+      text-align: center;
+      background: rgba(0,0,0,0.7);
+      margin: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 24px;
+      @include phones() {
+       font-size: 20px;
+      }
+    }
+
+    &__description {
+      font-weight: 100;
+      font-size: 16px;
+      line-height: 1.75;
+      font-family: Roboto, Tahoma, sans-serif;
+      padding: 25px 30px 25px 40px;
+
+      @include phones() {
+       font-size: 14px;
+      }
+    }
+
+    &__moreinfo {
+      padding: 40px;
+      margin-top: auto;
+      text-align: right;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: color 0.3s;
+
+      .fa-chevron-right {
+        margin-left: 10px;
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: lightgray;
+        //font-size: 17px;
+      }
+    }
+  }
+}
+
+.about__title,
+.tissue-main__title,
+.studio__title,
+.showroom-main__title {
+  font-family: Kurale-Regular, Roboto, sans-serif;
+  text-align: center;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 30px;
+
+  @include tablets() {
+    display: block;
+    font-size: 40px;
+  }
+
+  @include phones() {
+    font-size: 30px;
+  }
+}
+
+.about__link_main,
+.tissue-main__link_main,
+.studio__link_main,
+.showroom-main__link_main {
+  display: none;
+  text-decoration: none;
+  color: black;
+  font-weight: normal !important;
+
+  @include tablets() {
+    display: block;
+  }
+}
+
+.about__description,
+.tissue-main__description,
+.studio__description,
+.showroom-main__description  {
+  //font-weight: 100;
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: Roboto, Tahoma, sans-serif;
+  padding: 40px 20px 0 20px;
+  display: none;
+
+  @include tablets() {
+    display: block;
+  }
+  @include phones() {
+    font-size: 15px;
+
+  }
+}
+
+.about__moreinfo,
+.tissue-main__moreinfo,
+.studio__moreinfo,
+.showroom-main__moreinfo  {
+  padding-top: 40px;
+  padding-bottom: 0;
+  margin-top: auto;
+  text-align: right;
+  display: none;
+
+
+
+  @include tablets() {
+    padding-top: 30px;
+    display: block;
+  }
+
+  @include phones() {
+    padding-top: 0;
+  }
+}
+
+.about__link,
+.tissue-main__link,
+.studio__link,
+.showroom-main__link {
+  background-color: #e7ae01;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+  display: none;
+
+  .fa-chevron-right {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  &:active {
+    color: gray;
+    //font-size: 17px;
+  }
+
+  @include tablets() {
+    display: flex;
+  }
+  @include phones() {
+    font-size: 16px;
+    text-transform: uppercase;
+    //font-weight: 600;
+
+  }
+}
+
+.atelier-img {
+  max-width: 500px;
+}
+
+
+#slider-about {
+  .item-1 {
+    background: url('/../images/slider/about/about-1-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .item-2 {
+    background: url('/../images/slider/about/about-2-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .item-3 {
+    background: url('/../images/slider/about/about-4-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .item-4 {
+    background: url('/../images/slider/about/about-5-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+#slider-tissue {
+  .item-1 {
+    background: url('/../images/slider/tissue/tissue-7-r.jpeg') left center no-repeat;
+    //background: url("/assets/img/slider/tissue-7-r.jpeg") left center;
+    background-size: 100% 100%;
+  }
+  .item-2 {
+    background: url('/../images/slider/tissue/tissue-8.jpeg') left center no-repeat;
+    background-size: cover;
+  }
+  .item-3 {
+    background: url('/../images/slider/tissue/tissue-1.jpeg') left center no-repeat;
+    background-size: cover;
+  }
+  .item-4 {
+    background: url('/../images/slider/tissue/tissue-4.jpeg') left center no-repeat;
+    background-size: cover;
+  }
+}
+#slider-studio {
+  .item-1 {
+    background: url('/../images/studio-page/process-9.jpg') left center no-repeat;
+    background-size: cover;
+  }
+  .item-2 {
+    background: url('/../images/studio-page/process-8.jpg') left center no-repeat;
+    background-size: cover;
+  }
+  .item-3 {
+    background: url('/../images/studio-page/process-7.jpg') left center no-repeat;
+    background-size: cover;
+  }
+  .item-4 {
+    background: url('/../images/studio-page/process-6.jpg') left center no-repeat;
+    background-size: cover;
+  }
+}
+
+#slider-showroom {
+  .item-1 {
+    background: url('/../images/slider/showroom/showroom-7-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .item-2 {
+    background: url('/../images/slider/showroom/showroom-6-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .item-3 {
+    background: url('/../images/slider/showroom/showroom-5-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .item-4 {
+    background: url('/../images/slider/showroom/showroom-7-1000.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.owl-carousel {
+
+  .owl-nav {
+    position: absolute;
+    top:0;
+    right: 20px;
+    margin-top: 8px;
+
+    .owl-prev, .owl-next {
+      background-color: rgba(255,255,255,0.2);
+      color: white;
+      font-size: 18px;
+      &:hover {
+        color: lightgray;
+        background-color: rgba(255,255,255,0.3);
+      }
+    }
+
+  }
+}
+
+
