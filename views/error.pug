@@ -1,6 +1,11 @@
-extends layout
+extends ../_tissue-item-template
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+block variables
+  - var title = 'Страница не существует'
+
+block tissue-title
+
+  h1.banner__text.banner_404
+    span Страница не найдена.
+    | Возможно вы искали &nbsp;
+    a.link-404(href='/index') Главную страницу

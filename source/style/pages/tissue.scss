@@ -144,85 +144,55 @@
     &:hover {
       border-width: 15px;
       border-color: rgba(0,0,0,.2);
-
     }
   }
 }
 
 .barhat .tissue__img {
-  //background: url(./../../images/tissue-page/feb60-1.jpg) 0 0  no-repeat;
-  //background-size: 100% 100%;
-  background-image: url(./../../images/tissue-page/feb60-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb60-1.jpg');
 }
 .tvid .tissue__img {
-  //background: url(./../../images/tissue-page/feb40-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb40-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb40-1.jpg');
 }
 .shelk .tissue__img {
-  //background: url(./../../images/tissue-page/feb44-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb44-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb44-1.jpg');
 }
 .shifon .tissue__img {
-  //background: url(./../../images/tissue-page/feb46-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb46-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb46-1.jpg');
 }
 .gipur .tissue__img {
-  //background: url(./../../images/tissue-page/feb45-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb45-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb45-1.jpg');
 }
 .hlopok .tissue__img {
-  //background: url(./../../images/tissue-page/feb76-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb76-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb76-1.jpg');
 }
 .jakard .tissue__img {
-  //background: url(./../../images/tissue-page/feb41-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb41-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb41-1.jpg');
 }
 .kletka .tissue__img{
-  //background: url(./../../images/tissue-page/feb29-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb29-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb29-1.jpg');
 }
 .trikotaj .tissue__img{
-  //background: url(./../../images/tissue-page/feb75-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb75-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb75-1.jpg');
 }
 .podkladka .tissue__img{
-  //background: url(./../../images/tissue-page/feb47-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb47-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb47-1.jpg');
 }
 .drap .tissue__img{
-  //background: url(./../../images/tissue-page/feb43-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb43-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb43-1.jpg');
 }
 .costume .tissue__img{
-  //background: url(./../../images/tissue-page/feb31-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb31-1.jpg);
-
+  background-image: url('/../../images/tissue-page/feb31-1.jpg');
 }
 .furniture .tissue__img{
-  //background: url(./../../images/tissue-page/feb48-1.jpg) 0 0  no-repeat;
-  background-image: url(./../../images/tissue-page/feb48-1.jpg);
-
-  //background-size: cover;
+  background-image: url('/../../images/tissue-page/feb48-1.jpg');
 }
+
 .tissue-reverse {
   .tissue__img {
     order: 1;
   }
-
 }
-
 
 .tissue:nth-child(2n) .tissue__img {
   @include tablets() {
