@@ -7,13 +7,13 @@ footer.page-footer#footer
         .contact__adress-this Москва, Ломоносовский проспект, 25
       .contact__tel
         .contact__tel-title Телефон:
-        .contact__tel-this 8-910-8884444
+        a.contact__tel-this(href='tel:+74993946086') 8 (499) 394-60-86
     .instagram-wrapper
       a.instagram(target='_blank' href="https://www.instagram.com/tkani_mendosa/")
         #instafeed
   .footer-down
-    +nav("nav", [["О нас", "/index"], ["Ткани", "/tissue"], ["Ателье", "/studio"],
-        ["Шоурум", "/showroom"], ["Галерея", "/gallery"], ["Контакты", "#footer"]], activeItem)
+    +nav("nav", [["Главная", "/index"], ["О нас", "/about"], ["Ткани", "/tissue"], ["Ателье", "/studio"],
+        ["Шоурум", "/showroom"], ["Галерея", "/gallery"]], activeItem)
 
 
 

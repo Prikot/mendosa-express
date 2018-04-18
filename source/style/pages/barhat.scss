@@ -6,18 +6,22 @@
   .container {
     width: 1180px;
     display: flex;
-    justify-content: flex-start;
+    //justify-content: flex-start;
     flex-flow: row wrap;
+    justify-content: center;
 
     @include desktop() {
-      width: 80%;
+      width: 100%;
     }
 
     @include laptop() {
-      width: 92%;
+      //width: 92%;
+      justify-content: center;
+      align-items: center;
+
     }
     @include tablets() {
-      width: 94%;
+      //width: 94%;
     }
     @include phones() {
       width: 100%;
@@ -39,7 +43,7 @@
   justify-items: flex-start;
   height: 295px;
   flex: 1 1 295px;
-  max-width: 300px;
+  //max-width: 300px;
   overflow-x: hidden;
   margin: 0 auto;
 
@@ -51,16 +55,17 @@
   }
 
   @include laptop() {
-    flex: 1 1 200px;
+    flex: 1 1 240px;
+    //height: 250px;
+
 
   }
   @include tablets() {
-    //flex: 1 1 200px;
-    //width: 480px;
-    max-width: auto;
+    flex: 1 1 200px;
+
   }
   @include phones() {
-
+    flex: 1 1 200px;
   }
 
   .barhat__header {
@@ -68,7 +73,7 @@
     display: flex;
     flex-direction: column;
     //align-items: flex-end;
-    left: -100%;
+    left: -120%;
     top: 15px;
     transition: left .3s ease-in-out;
     //background: rgba(0,0,0,0.5);
@@ -105,125 +110,876 @@
   }
 }
 
-.barhat__img.item-1 {
-  background: url(/images/tissue-item-barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1-1.png) top left;
-  background-size: cover;
-}
-.barhat__img.item-2 {
-  background: url(/images/tissue-item-barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1.jpg) top left;
-  background-size: cover;
-}
-.barhat__img.item-3 {
-  background: url(/images/tissue-item-barhat/bt_biryuzovyy_s_zolotom_tg-x0232.jpg) top left;
-  background-size: cover;
-}
-.barhat__img.item-4 {
-  background: url(/images/tissue-item-barhat/bt_bolotnyy_tg74-1.jpg) top left;
-  background-size: cover;
-}
-.barhat__img.item-5 {
-  background: url(/images/tissue-item-barhat/bt_bolotnyy_tg74.jpg) top left;
-  background-size: cover;
-}
-.barhat__img.item-6 {
-  background: url(/images/tissue-item-barhat/bt_bordo_tg76-1.jpg) top left;
-  background-size: cover;
+#barhat {
+  .barhat__img.item-1 {
+    background: url('/images/tissue-items/barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1-1.png') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-2 {
+    background: url('/images/tissue-items/barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-3 {
+    background: url('/images/tissue-items/barhat/bt_biryuzovyy_s_zolotom_tg-x0232.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-4 {
+    background: url('/images/tissue-items/barhat/bt_bolotnyy_tg74-1.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-5 {
+    background: url('/images/tissue-items/barhat/bt_bolotnyy_tg74.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-6 {
+    background: url('/images/tissue-items/barhat/bt_bordo_tg76-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-7 {
+    background: url('/images/tissue-items/barhat/bt_bordo_tg76.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-8 {
+    background: url('/images/tissue-items/barhat/bt_chernyy_s_zolotom_tg-x0234-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-9 {
+    background: url('/images/tissue-items/barhat/bt_chernyy_s_zolotom_tg-x0234.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-10 {
+    background: url('/images/tissue-items/barhat/bt_fioletovyy_s_zolotom_tg-x233-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-11 {
+    background: url('/images/tissue-items/barhat/bt_fioletovyy_s_zolotom_tg-x233.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-12 {
+    background: url('/images/tissue-items/barhat/bt_lilovyy_tg75-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-13 {
+    background: url('/images/tissue-items/barhat/bt_lilovyy_tg75.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-14 {
+    background: url('/images/tissue-items/barhat/bt_limon_tg53-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-15 {
+    background: url('/images/tissue-items/barhat/bt_limon_tg53.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-16 {
+    background: url('/images/tissue-items/barhat/bt_persik_tg73-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-17 {
+    background: url('/images/tissue-items/barhat/bt_persik_tg73.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-18 {
+    background: url('/images/tissue-items/barhat/bt_pudra_tg56-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-19 {
+    background: url('/images/tissue-items/barhat/bt_pudra_tg56.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-20 {
+    background: url('/images/tissue-items/barhat/bt_rozovyy_tg_sa-49-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-21 {
+    background: url('/images/tissue-items/barhat/bt_rozovyy_tg_sa-49.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-22 {
+    background: url('/images/tissue-items/barhat/bt_seryy_tg62-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-23 {
+    background: url('/images/tissue-items/barhat/bt_seryy_tg62.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-24 {
+    background: url('/images/tissue-items/barhat/bt_sliva_tg70-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-25 {
+    background: url('/images/tissue-items/barhat/bt_sliva_tg70.jpg') top left;
+    background-size: cover;
+  }
 }
 
-.barhat__img.item-7 {
-  background: url(/images/tissue-item-barhat/bt_bordo_tg76.jpg) top left;
-  background-size: cover;
+#hlopok {
+  .barhat__img.item-1 {
+    background: url('/images/tissue-items/hlopok/hlopok_01-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-2 {
+    background: url('/images/tissue-items/hlopok/hlopok_001-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-3 {
+    background: url('/images/tissue-items/hlopok/hlopok_02-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-4 {
+    background: url('/images/tissue-items/hlopok/hlopok_002-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-5 {
+    background: url('/images/tissue-items/hlopok/hlopok_03-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-6 {
+    background: url('/images/tissue-items/hlopok/hlopok_003-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-7 {
+    background: url('/images/tissue-items/hlopok/hlopok_04-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-8 {
+    background: url('/images/tissue-items/hlopok/hlopok_004-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-9 {
+    background: url('/images/tissue-items/hlopok/hlopok_05-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-10 {
+    background: url('/images/tissue-items/hlopok/hlopok_005-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-11 {
+    background: url('/images/tissue-items/hlopok/hlopok_06-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-12 {
+    background: url('/images/tissue-items/hlopok/hlopok_006-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-13 {
+    background: url('/images/tissue-items/hlopok/hlopok_0006-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-14 {
+    background: url('/images/tissue-items/hlopok/hlopok_09-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-15 {
+    background: url('/images/tissue-items/hlopok/hlopok_009-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-16 {
+    background: url('/images/tissue-items/hlopok/hlopok_010-295.jpg') top left;
+    background-size: cover;
+    }
+  .barhat__img.item-17 {
+    background: url('/images/tissue-items/hlopok/hlopok_0010-295.jpg') top left;
+    background-size: cover;
+  }
 }
 
-.barhat__img.item-8 {
-  background: url(/images/tissue-item-barhat/bt_chernyy_s_zolotom_tg-x0234-1.jpg) top left;
-  background-size: cover;
+#trikotaj {
+  .barhat__img.item-1 {
+    background: url('/images/tissue-items/trikotaj/triko-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-2 {
+    background: url('/images/tissue-items/trikotaj/triko_17-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-3 {
+    background: url('/images/tissue-items/trikotaj/triko_18-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-4 {
+    background: url('/images/tissue-items/trikotaj/triko_018-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-5 {
+    background: url('/images/tissue-items/trikotaj/triko_0018-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-6 {
+    background: url('/images/tissue-items/trikotaj/triko_019-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-7 {
+    background: url('/images/tissue-items/trikotaj/triko_0019-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-8 {
+    background: url('/images/tissue-items/trikotaj/triko_020-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-9 {
+    background: url('/images/tissue-items/trikotaj/triko_0020-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-10 {
+    background: url('/images/tissue-items/trikotaj/triko_022-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-11 {
+    background: url('/images/tissue-items/trikotaj/triko_0022-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-12 {
+    background: url('/images/tissue-items/trikotaj/triko_23-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-13 {
+    background: url('/images/tissue-items/trikotaj/triko_024-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-14 {
+    background: url('/images/tissue-items/trikotaj/triko_0024-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-15 {
+    background: url('/images/tissue-items/trikotaj/triko_26-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-16 {
+    background: url('/images/tissue-items/trikotaj/triko_32-295.jpg') top left;
+    background-size: cover;
+    }
+  .barhat__img.item-17 {
+    background: url('/images/tissue-items/trikotaj/triko_33-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-18 {
+    background: url('/images/tissue-items/trikotaj/triko_44-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-19 {
+    background: url('/images/tissue-items/trikotaj/triko_54-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-20 {
+    background: url('/images/tissue-items/trikotaj/triko_56-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-21 {
+    background: url('/images/tissue-items/trikotaj/triko_59-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-22 {
+    background: url('/images/tissue-items/trikotaj/triko_071-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-23 {
+    background: url('/images/tissue-items/trikotaj/triko_0071-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-24 {
+    background: url('/images/tissue-items/trikotaj/triko_072-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-25 {
+    background: url('/images/tissue-items/trikotaj/triko_0072-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-26 {
+    background: url('/images/tissue-items/trikotaj/triko_073-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-27 {
+    background: url('/images/tissue-items/trikotaj/triko_0073-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-28 {
+    background: url('/images/tissue-items/trikotaj/triko_2925-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-29 {
+    background: url('/images/tissue-items/trikotaj/triko_2928-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-23 {
+    background: url('/images/tissue-items/trikotaj/triko_2935-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-30 {
+    background: url('/images/tissue-items/trikotaj/triko_2946-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-31 {
+    background: url('/images/tissue-items/trikotaj/triko_2951-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-32 {
+    background: url('/images/tissue-items/trikotaj/triko_2960-295.jpg') top left;
+    background-size: cover;
+  }
 }
 
-.barhat__img.item-9 {
-  background: url(/images/tissue-item-barhat/bt_chernyy_s_zolotom_tg-x0234.jpg) top left;
-  background-size: cover;
+#jakard {
+  .barhat__img.item-1 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_14_DG-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-2 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_14_DG_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-3 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_14_DG_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-4 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_29_DG-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-5 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_29_DG_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-6 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_29_DG_2-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-7 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_30_ALBERTA_FERETTI-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-8 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_30_ALBERTA_FERETTI_1-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-9 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_30_ALBERTA_FERETTI_2-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-10 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_33_ALBERTA_FERETTI-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-11 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_33_ALBERTA_FERETTI_1-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-12 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_33_ALBERTA_FERETTI_2-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-13 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_34_BALMAIN-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-14 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_34_BALMAIN_1-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-15 {
+    background: url('/images/tissue-items/jakard/ALR_TE_2811_34_BALMAIN_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-16 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_2028-295.jpg') top left;
+    background-size: cover;
+    }
+  .barhat__img.item-17 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_2029-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-18 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_2030-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-19 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_5011-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-20 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_5011_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-21 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_5011_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-22 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_5012-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-23 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_5015-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-24 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_5015_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-25 {
+    background: url('/images/tissue-items/jakard/AT_C_17_02_5015_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-26 {
+    background: url('/images/tissue-items/jakard/C_17_02_5010-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-27 {
+    background: url('/images/tissue-items/jakard/C_17_02_5010_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-28 {
+    background: url('/images/tissue-items/jakard/C_17_02_5010_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-29 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5001-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-23 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5001_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-30 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5001_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-31 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-32 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-33 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002_1-295.jpg') top left;
+    background-size: cover;
+  }.barhat__img.item-31 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-32 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-33 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002_1-295.jpg') top left;
+    background-size: cover;
+  }.barhat__img.item-31 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-32 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-33 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5002_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-34 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5003-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-35 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5003_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-36 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5003_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-37 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5005-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-38 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5005_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-39 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5005_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-40 {
+    background: url('/images/tissue-items/jakard/NT_C_17_02_5008-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-41 {
+    background: url('/images/tissue-items/jakard/QU12846-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-42 {
+    background: url('/images/tissue-items/jakard/QU12846_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-43 {
+    background: url('/images/tissue-items/jakard/QU12846_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-44 {
+    background: url('/images/tissue-items/jakard/QU12847-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-45 {
+    background: url('/images/tissue-items/jakard/QU12847_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-46 {
+    background: url('/images/tissue-items/jakard/QU12847_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-44 {
+    background: url('/images/tissue-items/jakard/QU12847-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-45 {
+    background: url('/images/tissue-items/jakard/QU12847_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-46 {
+    background: url('/images/tissue-items/jakard/QU12847_2-295.jpg') top left;
+    background-size: cover;
+  }
+  //.barhat__img.item-47 {
+  //  background: url('/images/tissue-items/jakard/QU12851-295.jpg') top left;
+  //  background-size: cover;
+  //}
+  .barhat__img.item-48 {
+    background: url('/images/tissue-items/jakard/QU12851_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-49 {
+    background: url('/images/tissue-items/jakard/QU12851_1_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-50 {
+    background: url('/images/tissue-items/jakard/QU12851_1_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-51 {
+    background: url('/images/tissue-items/jakard/QU12851_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-52 {
+    background: url('/images/tissue-items/jakard/QU12851_2_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-53 {
+    background: url('/images/tissue-items/jakard/QU12851_2_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-54 {
+    background: url('/images/tissue-items/jakard/QU12852-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-55 {
+    background: url('/images/tissue-items/jakard/QU12852_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-56 {
+    background: url('/images/tissue-items/jakard/QU12852_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-57 {
+    background: url('/images/tissue-items/jakard/QU32818-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-58 {
+    background: url('/images/tissue-items/jakard/QU32818_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-59 {
+    background: url('/images/tissue-items/jakard/SAND29_07_17_5017-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-60 {
+    background: url('/images/tissue-items/jakard/SAND29_07_17_5017_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-61 {
+    background: url('/images/tissue-items/jakard/SAND41_07_17_5016-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-62 {
+    background: url('/images/tissue-items/jakard/SAND41_07_17_5016_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-63 {
+    background: url('/images/tissue-items/jakard/SAND41_07_17_5016_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-64 {
+    background: url('/images/tissue-items/jakard/ST_C_17_02_0003_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-65 {
+    background: url('/images/tissue-items/jakard/ST_C_17_02_0003_2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-66 {
+    background: url('/images/tissue-items/jakard/ST_C_17_02_5013-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-67 {
+    background: url('/images/tissue-items/jakard/ST_C_17_02_5013_1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-68 {
+    background: url('/images/tissue-items/jakard/TG_S_199_1_GUCCI-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-69 {
+    background: url('/images/tissue-items/jakard/TG_S_199_2_GUCCI-295.jpg') top left;
+    background-size: cover;
+  }
 }
 
-.barhat__img.item-10 {
-  background: url(/images/tissue-item-barhat/bt_fioletovyy_s_zolotom_tg-x233-1.jpg) top left;
-  background-size: cover;
+#kletka {
+  .barhat__img.item-1 {
+    background: url('/images/tissue-items/kletka/ALB28-1-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-2 {
+    background: url('/images/tissue-items/kletka/ALB2811-2-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-3 {
+    background: url('/images/tissue-items/kletka/ALB2811-3-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-4 {
+    background: url('/images/tissue-items/kletka/ALB2811-4-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-5 {
+    background: url('/images/tissue-items/kletka/ALB2811-5-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-6 {
+    background: url('/images/tissue-items/kletka/ALB2811-6-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-7 {
+    background: url('/images/tissue-items/kletka/ALB2811-7-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-8 {
+    background: url('/images/tissue-items/kletka/ALB2811-8-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-9 {
+    background: url('/images/tissue-items/kletka/ALB2811-9-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-10 {
+    background: url('/images/tissue-items/kletka/LM0927-18-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-11 {
+    background: url('/images/tissue-items/kletka/LM9605.01_2-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-12 {
+    background: url('/images/tissue-items/kletka/LM9615.01-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-13 {
+    background: url('/images/tissue-items/kletka/SA0927-02_ARMANI-295.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-14 {
+    background: url('/images/tissue-items/kletka/SA0927-53_ARMANI-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-15 {
+    background: url('/images/tissue-items/kletka/SA0927-54-295.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-16 {
+    background: url('/images/tissue-items/kletka/SA0927-55-295.jpg') top left;
+    background-size: cover;
+  }
+
 }
 
-.barhat__img.item-11 {
-  background: url(/images/tissue-item-barhat/bt_fioletovyy_s_zolotom_tg-x233.jpg) top left;
-  background-size: cover;
+#tvid, #shelk, #shifon, #gipur, #podkladka,
+#drap, #costume, #furniture {
+  .barhat__img.item-1 {
+    background: url('/images/tissue-items/barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1-1.png') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-2 {
+    background: url('/images/tissue-items/barhat/bt_biryuzovyy_s_zolotom_tg-x0232-1.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-3 {
+    background: url('/images/tissue-items/barhat/bt_biryuzovyy_s_zolotom_tg-x0232.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-4 {
+    background: url('/images/tissue-items/barhat/bt_bolotnyy_tg74-1.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-5 {
+    background: url('/images/tissue-items/barhat/bt_bolotnyy_tg74.jpg') top left;
+    background-size: cover;
+  }
+  .barhat__img.item-6 {
+    background: url('/images/tissue-items/barhat/bt_bordo_tg76-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-7 {
+    background: url('/images/tissue-items/barhat/bt_bordo_tg76.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-8 {
+    background: url('/images/tissue-items/barhat/bt_chernyy_s_zolotom_tg-x0234-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-9 {
+    background: url('/images/tissue-items/barhat/bt_chernyy_s_zolotom_tg-x0234.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-10 {
+    background: url('/images/tissue-items/barhat/bt_fioletovyy_s_zolotom_tg-x233-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-11 {
+    background: url('/images/tissue-items/barhat/bt_fioletovyy_s_zolotom_tg-x233.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-12 {
+    background: url('/images/tissue-items/barhat/bt_lilovyy_tg75-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-13 {
+    background: url('/images/tissue-items/barhat/bt_lilovyy_tg75.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-14 {
+    background: url('/images/tissue-items/barhat/bt_limon_tg53-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-15 {
+    background: url('/images/tissue-items/barhat/bt_limon_tg53.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-16 {
+    background: url('/images/tissue-items/barhat/bt_persik_tg73-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-17 {
+    background: url('/images/tissue-items/barhat/bt_persik_tg73.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-18 {
+    background: url('/images/tissue-items/barhat/bt_pudra_tg56-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-19 {
+    background: url('/images/tissue-items/barhat/bt_pudra_tg56.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-20 {
+    background: url('/images/tissue-items/barhat/bt_rozovyy_tg_sa-49-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-21 {
+    background: url('/images/tissue-items/barhat/bt_rozovyy_tg_sa-49.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-22 {
+    background: url('/images/tissue-items/barhat/bt_seryy_tg62-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-23 {
+    background: url('/images/tissue-items/barhat/bt_seryy_tg62.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-24 {
+    background: url('/images/tissue-items/barhat/bt_sliva_tg70-1.jpg') top left;
+    background-size: cover;
+  }
+
+  .barhat__img.item-25 {
+    background: url('/images/tissue-items/barhat/bt_sliva_tg70.jpg') top left;
+    background-size: cover;
+  }
 }
 
-.barhat__img.item-12 {
-  background: url(/images/tissue-item-barhat/bt_lilovyy_tg75-1.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-13 {
-  background: url(/images/tissue-item-barhat/bt_lilovyy_tg75.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-14 {
-  background: url(/images/tissue-item-barhat/bt_limon_tg53-1.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-15 {
-  background: url(/images/tissue-item-barhat/bt_limon_tg53.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-16 {
-  background: url(/images/tissue-item-barhat/bt_persik_tg73-1.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-17 {
-  background: url(/images/tissue-item-barhat/bt_persik_tg73.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-18 {
-  background: url(/images/tissue-item-barhat/bt_pudra_tg56-1.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-19 {
-  background: url(/images/tissue-item-barhat/bt_pudra_tg56.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-20 {
-  background: url(/images/tissue-item-barhat/bt_rozovyy_tg_sa-49-1.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-21 {
-  background: url(/images/tissue-item-barhat/bt_rozovyy_tg_sa-49.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-22 {
-  background: url(/images/tissue-item-barhat/bt_seryy_tg62-1.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-23 {
-  background: url(/images/tissue-item-barhat/bt_seryy_tg62.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-24 {
-  background: url(/images/tissue-item-barhat/bt_sliva_tg70-1.jpg) top left;
-  background-size: cover;
-}
-
-.barhat__img.item-25 {
-  background: url(/images/tissue-item-barhat/bt_sliva_tg70.jpg) top left;
-  background-size: cover;
-}
 
 .banner_404 {
     font-family: Roboto, "Helvetica", Helvetica, Arial, sans-serif !important;
@@ -243,3 +999,34 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .barhat__img {
+    flex: 1 1 100%;
+  }
+}
+
+.barhat__img.active {
+  transform: scale(2);
+  z-index: 2;
+}
+
+.barhat__img:nth-child(4).active {
+  transform: scale(2) translateX(-120px);
+  z-index: 2;
+
+  @include desktop() {
+    transform: scale(2) translateX(0);
+  }
+
+  @include laptop() {
+  }
+
+  @include tablets() {
+  }
+
+  @include phones() {
+  }
+
+}
+

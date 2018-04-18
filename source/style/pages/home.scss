@@ -42,13 +42,9 @@ section.owl-slider {
     padding-top: 50px;
   }
 
-  @include laptop() {
-  }
-
   @include tablets() {
     justify-content: space-around;
-    height: 90vh;
-
+    height: auto;
   }
 
   @include phones() {
@@ -69,7 +65,7 @@ section.owl-slider {
     }
 
     @include tablets() {
-      //padding-top: 0;
+      padding-top: 0;
     }
   }
 
@@ -126,12 +122,7 @@ section.owl-slider {
       height: 40vh;
       min-height: 40vh;
     }
-
-    @include phones() {
-      //height: 100vh;
-    }
   }
-
 
   .slider-text {
     position: absolute;
@@ -261,7 +252,7 @@ section.owl-slider {
   }
   @include phones() {
     font-size: 15px;
-
+    margin-bottom: 30px;
   }
 }
 
@@ -333,76 +324,76 @@ section.owl-slider {
 
 #slider-about {
   .item-1 {
-    background: url('/../images/slider/about/about-1-1000.jpg') center center no-repeat;
+    background: url('/images/slider/about/about-1-1000-min.png') center center no-repeat;
     background-size: cover;
   }
   .item-2 {
-    background: url('/../images/slider/about/about-2-1000.jpg') center center no-repeat;
+    background: url('/images/slider/about/about-2-1000-min.png') center center no-repeat;
     background-size: cover;
   }
   .item-3 {
-    background: url('/../images/slider/about/about-4-1000.jpg') center center no-repeat;
+    background: url('/images/slider/about/about-4-1000-min.png') center center no-repeat;
     background-size: cover;
   }
   .item-4 {
-    background: url('/../images/slider/about/about-5-1000.jpg') center center no-repeat;
+    background: url('/images/slider/about/about-5-1000-min.png') center center no-repeat;
     background-size: cover;
   }
 }
 
 #slider-tissue {
   .item-1 {
-    background: url('/../images/slider/tissue/tissue-7-r.jpeg') left center no-repeat;
+    background: url('/images/slider/tissue/tissue-7-r.jpeg') left center no-repeat;
     //background: url("/assets/img/slider/tissue-7-r.jpeg") left center;
     background-size: 100% 100%;
   }
   .item-2 {
-    background: url('/../images/slider/tissue/tissue-8.jpeg') left center no-repeat;
+    background: url('/images/slider/tissue/tissue-8.jpeg') left center no-repeat;
     background-size: cover;
   }
   .item-3 {
-    background: url('/../images/slider/tissue/tissue-1.jpeg') left center no-repeat;
+    background: url('/images/slider/tissue/tissue-1.jpeg') left center no-repeat;
     background-size: cover;
   }
   .item-4 {
-    background: url('/../images/slider/tissue/tissue-4.jpeg') left center no-repeat;
+    background: url('/images/slider/tissue/tissue-4.jpeg') left center no-repeat;
     background-size: cover;
   }
 }
 #slider-studio {
   .item-1 {
-    background: url('/../images/studio-page/process-9.jpg') left center no-repeat;
+    background: url('/images/studio-page/process-9.jpg') left center no-repeat;
     background-size: cover;
   }
   .item-2 {
-    background: url('/../images/studio-page/process-8.jpg') left center no-repeat;
+    background: url('/images/studio-page/process-8.jpg') left center no-repeat;
     background-size: cover;
   }
   .item-3 {
-    background: url('/../images/studio-page/process-7.jpg') left center no-repeat;
+    background: url('/images/studio-page/process-7.jpg') left center no-repeat;
     background-size: cover;
   }
   .item-4 {
-    background: url('/../images/studio-page/process-6.jpg') left center no-repeat;
+    background: url('/images/studio-page/process-6.jpg') left center no-repeat;
     background-size: cover;
   }
 }
 
 #slider-showroom {
   .item-1 {
-    background: url('/../images/slider/showroom/showroom-7-1000.jpg') center center no-repeat;
+    background: url('/images/slider/showroom/showroom-7-1000.jpg') center center no-repeat;
     background-size: cover;
   }
   .item-2 {
-    background: url('/../images/slider/showroom/showroom-6-1000.jpg') center center no-repeat;
+    background: url('/images/slider/showroom/showroom-6-1000.jpg') center center no-repeat;
     background-size: cover;
   }
   .item-3 {
-    background: url('/../images/slider/showroom/showroom-5-1000.jpg') center center no-repeat;
+    background: url('/images/slider/showroom/showroom-5-1000.jpg') center center no-repeat;
     background-size: cover;
   }
   .item-4 {
-    background: url('/../images/slider/showroom/showroom-7-1000.jpg') center center no-repeat;
+    background: url('/images/slider/showroom/showroom-7-1000.jpg') center center no-repeat;
     background-size: cover;
   }
 }
@@ -428,4 +419,9 @@ section.owl-slider {
   }
 }
 
+.rc-inactive #rc-phone-highlight {
+  @include phones() {
+    right: 0;
+  }
+}
 

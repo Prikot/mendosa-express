@@ -19,7 +19,9 @@
       min-height: 250px;
       margin-bottom: 25px;
       margin-top: 25px;
-      border: 1px solid white;
+      //border: 1px solid white;
+      background: url("/images/map-pic-1.png");
+      background-size: cover;
       flex: 1 1 39%;
 
       @include desktop() {
@@ -132,8 +134,10 @@
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-
+        justify-content: flex-end;
+        @include laptop() {
+          justify-content: center;
+        }
         img {
           max-width: 100%;
           height: auto;

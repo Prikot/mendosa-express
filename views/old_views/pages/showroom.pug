@@ -1,0 +1,41 @@
+extends ../_template
+
+block variables
+  - var title = 'Шоурум'
+  - var activeItem = 4
+
+
+block content
+  .showroom-wrapper
+    .showroom.item-1
+      .showroom__img
+      .showroom__description
+        h2.showroom__title Charm
+        //.showroom__title Блузки
+        //.showroom__title Юбки
+        //.showroom__title Брюки
+        //.showroom__title Топы
+        .showroom__link
+          a.showroom__url(href='#') Подробнее
+      a.cover-link(href='/barhat.html')
+    .showroom.item-2
+      .showroom__img
+      .showroom__description
+        h2.showroom__title Rich
+        .showroom__link
+          a.showroom__url(href='#') Подробнее
+      a.cover-link(href='#')
+    .showroom-reverse.item-3
+      .showroom__img
+      .showroom__description
+        h2.showroom__title Cute
+        .showroom__link
+          a.showroom__url(href='#') Подробнее
+        a.cover-link(href='#')
+    .showroom-reverse.item-4
+      .showroom__img
+      .showroom__description
+        h2.showroom__title Easy
+        .showroom__link
+          a.showroom__url(href='#') Подробнее
+        a.cover-link(href='#')

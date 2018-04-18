@@ -1,0 +1,155 @@
+$main-color: rgba(252, 228, 236, 0.87);
+
+//Kurale-Regular font
+@font-face {
+  font-family: 'Kurale-Regular';
+  src: url('../fonts/Kurale-Regular.ttf')  format('truetype');
+  src: url('../fonts/Kurale-Regular.eot');
+  src: url('../fonts/Kurale-Regular.woff') format('woff'),
+  url('../fonts/Kurale-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//WolfgangAmadeusMozart font
+@font-face {
+  font-family: 'WolfgangAmadeusMozart';
+  src: url('../fonts/WolfgangAmadeusMozart.ttf')  format('truetype');
+  src:url('../fonts/WolfgangAmadeusMozart.eot');
+  src: url('../fonts/WolfgangAmadeusMozart.woff') format('woff'),
+  url('../fonts/WolfgangAmadeusMozart.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  min-height: 100%;
+}
+html,
+body {
+  height: 100%;
+  font-family: Roboto, Arial, Tahoma, sans-serif;
+  font-size: 14px;
+  min-width: 320px;
+
+  @include phones() {
+    font-size: 13px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  background: $main-color;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+hr {
+  background-color: rgba(192, 172, 172, 0.5);
+  height: 1px;
+  width: 90%;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  padding: 0;
+
+  @include phones() {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100%;
+
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+footer {
+  height: 70px;
+  background-color: #121212;
+  color: white;
+}
+h1.main-title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Kurale-Regular, Roboto, sans-serif;
+}
+
+
+
+//============ Media-queries============
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+

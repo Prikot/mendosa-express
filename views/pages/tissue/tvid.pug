@@ -1,13 +1,15 @@
-extends ../../_tissue-item-template
+extends ../_tissue-item-template
 
 block variables
   - var title = 'Твид - Наименования'
+  - var activeTissue = 'Твид'
+  - var activeTissueUrl = 'assets/img/tissue-page/feb40-1920.jpg'
 
 block tissue-title
-  h1.banner__text Tvid
+  h1.banner__text #{activeTissue}
 
 block content
-  .barhat-wrapper
+  .barhat-wrapper#tvid
     .container
       a(href='#').barhat__img.item-1
         .barhat__header

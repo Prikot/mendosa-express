@@ -6,45 +6,45 @@
   }
 
   15% {
-    background: url("/../images/test-2-min.jpg");
+    background: url("/images/test-2-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
   }
 
   30% {
-    background: url("/../images/test-7-min.jpg");
+    background: url("/images/test-7-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
 
   45% {
-    background: url("/../images/test-4-min.jpg");
+    background: url("/images/test-4-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   60% {
-    background: url("/../images/test-5-min.jpg");
+    background: url("/images/test-5-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   74% {
-    background: url("/../images/test-6-min.jpg");
+    background: url("/images/test-6-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   88% {
-    background: url("/../images/test-3-min.jpg");
+    background: url("/images/test-3-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
 
   to {
-    background: url("/../images/test-3-min.jpg");
+    background: url("/images/test-3-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
@@ -52,51 +52,51 @@
 }
 @keyframes change-back-img-test {
   from {
-    background: url("/../images/banner/test-11-min.jpg");
+    background: url("/images/banner/test-11-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
   }
 
   15% {
-    background: url("/../images/banner/test-12-min.jpg");
+    background: url("/images/banner/test-12-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
   }
 
   30% {
-    background: url("/../images/banner/test-14-min.jpg");
+    background: url("/images/banner/test-14-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
 
   44% {
-    background: url("/../images/banner/test-3-min-min.jpg");
+    background: url("/images/banner/test-3-min-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   59% {
-    background: url("/../images/banner/test-18-min.jpg");
+    background: url("/images/banner/test-18-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   73% {
-    background: url("/../images/banner/test-15-min.jpg");
+    background: url("/images/banner/test-15-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
   87% {
-    background: url("/../images/banner/test-16-min.jpg");
+    background: url("/images/banner/test-16-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
   }
 
   to {
-    background: url("/../images/banner/test-17-min.jpg");
+    background: url("/images/banner/test-17-min.jpg");
     background-size: cover;
     background-attachment:  fixed;
 
@@ -113,6 +113,8 @@
   }
 }
 
+
+
 @keyframes back-img-test {
   from {
     transform: translateY(0) translateZ(0) ;
@@ -123,6 +125,34 @@
 
   }
 }
+
+@media screen and (max-width: 768px) {
+  @keyframes back-img-test {
+    from {
+      transform: translateY(0) translateZ(0) ;
+    }
+
+    to {
+      transform: translateY(-50px);
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes back-img-test {
+    from {
+      transform: translateY(0) translateZ(0) ;
+    }
+
+    to {
+      transform: translateY(-100px);
+
+    }
+  }
+}
+
+
 @keyframes main-arrow-move {
   from {
     transform: translateY(0) translateZ(0);

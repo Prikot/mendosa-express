@@ -29,6 +29,9 @@ router.get('/showroom', function(req, res, next) {
 router.get('/gallery', function(req, res, next) {
   res.render('pages/gallery', { title: 'О нас' });
 });
+router.get('/barhat', function(req, res, next) {
+  res.render('pages/barhat', { title: 'Бархат' });
+});
 
 
 module.exports = router;

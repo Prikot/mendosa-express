@@ -13,12 +13,13 @@ $main-color: rgb(252, 228, 236);
   white-space: nowrap;
 
   @include tablets() {
-    height: 50vh;
+    height: 40vh;
+    min-height: 400px;
   }
 
   @include phones() {
     max-height: 500px;
-    min-height: auto;
+    min-height: 300px;
   }
 
   .header__background {
@@ -80,7 +81,7 @@ $main-color: rgb(252, 228, 236);
     align-items: center;
     z-index: 11;
     top: 5px;
-    right: 10%;
+    right: 5%;
     color: white;
     text-decoration: none;
 
@@ -92,7 +93,7 @@ $main-color: rgb(252, 228, 236);
     }
 
     @include laptop() {
-      right: 5%;
+      right: 0;
     }
 
     @include tablets() {
@@ -115,7 +116,7 @@ $main-color: rgb(252, 228, 236);
       text-decoration: none;
       color: white;
       transition: color 0.5s linear;
-      @include laptop() {
+      @include desktop() {
        display: none;
       }
     }
@@ -279,13 +280,13 @@ $main-color: rgb(252, 228, 236);
     }
 
     @include phones() {
-      width: 250px;
-      height: 250px;
+      width: 220px;
+      height: 220px;
     }
 
     .logo-circle {
       align-self: center;
-      background: url(/images/logo/logo-white.png) center center;
+      background: url('/images/logo/logo-white.png') center center;
       background-size: 100%;
       background-repeat: no-repeat;
       width: 100%;
@@ -390,7 +391,7 @@ $main-color: rgb(252, 228, 236);
     }
 
     @include phones() {
-      font-size: 30px;
+      font-size: 35px;
       line-height: 1;
     }
   }
@@ -487,7 +488,6 @@ div.rotator ul li img {
 div.rotator ul li.show {
   z-index:500;
 }
-
 
 
 //@media (max-device-width: 414px) {

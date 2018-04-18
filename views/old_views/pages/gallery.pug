@@ -1,0 +1,21 @@
+extends ../_template
+
+block variables
+  - var title = 'Галерея'
+  - var activeItem = 5
+
+block content
+  h1.main-title #{title}
+  .gallery#gallery
+    img.main-img(src='/../images/slider/showroom/showroom-6-1000.jpg')
+    ul
+      li
+        img.gallery-slider__img(src='/../images/slider/showroom/showroom-6-1000.jpg')
+      li
+        img.gallery-slider__img(src='/../images/slider/showroom/showroom-5-1000.jpg')
+      li
+        img.gallery-slider__img(src='/../images/slider/showroom/showroom-6-1000.jpg')
+      li
+        img.gallery-slider__img(src='/../images/slider/showroom/showroom-5-1000.jpg')
+      li
+        img.gallery-slider__img(src='/../images/slider/showroom/showroom-6-1000.jpg')

@@ -23,23 +23,21 @@
     flex-flow: row nowrap;
     height: 65vh;
     min-height: 600px;
+    width: 100%;
     @include desktop() {
       min-height: 350px;
       height: 60vh;
 
     }
 
-    @include tablets() {
-      min-height: 350px;
-      height: 50vh;
-    }
+
     @include laptop() {
       min-height: 400px;
-
       //height: 50vh;
     }
     @include tablets() {
-      //height: 42vh;
+      min-height: 350px;
+      height: 50vh;
     }
 
     @include phones() {
@@ -70,41 +68,41 @@
       }
     }
     &__img.item-1 {
-      background: url(/images/studio-page/process-9.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-9.jpg') center center no-repeat;
       background-size: cover;
     }
     &__img.item-2 {
-      background: url(/images/studio-page/process-8.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-8.jpg') center center no-repeat;
       background-size: cover;
     }
     &__img.item-3 {
-      background: url(/images/studio-page/process-7.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-7.jpg') center center no-repeat;
       background-size: cover;
     }
 
     &__img.item-4 {
-      background: url(/images/studio-page/process-6.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-6.jpg') center center no-repeat;
       background-size: cover;
     }
 
     &__img.item-5 {
-      background: url(/images/studio-page/process-5.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-5.jpg') center center no-repeat;
       background-size: cover;
     }
     &__img.item-6 {
-      background: url(/images/studio-page/process-4.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-4.jpg') center center no-repeat;
       background-size: cover;
     }
     &__img.item-7 {
-      background: url(/images/studio-page/process-3.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-3.jpg') center center no-repeat;
       background-size: cover;
     }
     &__img.item-8 {
-      background: url(/images/studio-page/process-2.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-2.jpg') center center no-repeat;
       background-size: cover;
     }
     &__img.item-9 {
-      background: url(/images/studio-page/process-1.jpg) center center no-repeat;
+      background: url('/images/studio-page/process-1.jpg') center center no-repeat;
       background-size: cover;
     }
 
@@ -115,6 +113,7 @@
       font-size: 16px;
       line-height: 1.75;
       flex: 1 1 300px;
+
       @include laptop() {
         flex: 1 1 200px;
       }

@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+@import 'common/_mixins';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/tissue';
+  @import 'pages/barhat';
+@import 'pages/studio';
+@import 'pages/showroom';
+@import 'pages/gallery';
+@import 'pages/contact';
+
+@import 'common/header';
+@import 'common/header-tissue';
+@import 'common/main';
+@import 'common/footer';
+@import 'common/animation';
+@import 'common/menu-mobile';
+@import 'common/preloader';
+

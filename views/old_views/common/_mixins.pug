@@ -1,0 +1,16 @@
+mixin nav(className, items,  activeItem)
+  nav(class=`${className}`)
+    .container
+      ul(class=`${className}__list`)
+        each item, ndx in items
+          li(class=`${className}__item` + ( (ndx === activeItem) ? (` ${className}__item_active`) : ''))
+            a(class=`${className}__link` href=`${item[ndx, 1]}`)= item[0]
+
+mixin screen-menu(className, items,  activeItem)
+  div(class=`${className}`)
+    div(class=`${className}__container`)
+      each item, ndx in items
+        div(class=`${className}__row` + ( (ndx === activeItem) ? (` ${className}__item_active`) : ''))
+          a(class=`${className}__link` href=`${item[ndx, 1]}`)
+            .subtitle= item[0]
+

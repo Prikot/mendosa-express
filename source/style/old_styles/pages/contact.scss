@@ -1,0 +1,113 @@
+.contact-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  flex-flow: column nowrap;
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-flow: row nowrap;
+    width: 100%;
+    @include phones() {
+      flex-flow: column wrap;
+
+    }
+    &__img {
+      border: 1px solid black;
+      height: 300px;
+      width: 50%;
+      //min-width: 500px;
+      margin: 40px;
+      align-content: flex-end;
+
+      @include phones() {
+        width: 98%;
+        margin: 0 auto;
+
+      }
+    }
+
+
+
+
+  }
+}
+
+.contact__data {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #504f51;
+  font-size: 16px;
+  line-height: 1.75;
+
+  @include phones() {
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px 0 100px 10px;
+    //padding-left: 10px;
+    //padding-right: 0;
+    //padding-bottom: 100px;
+    height: 160px;
+    justify-content: space-around;
+
+
+
+  }
+
+  &__adress {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &-title {
+      color: #292c2f;
+      font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      margin: 0 0 1.32em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    &-this {
+      font-size: 1rem;
+      color: #292c2f;
+    }
+  }
+
+  &__tel {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    &-title {
+      color: #292c2f;
+      font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      margin: 0 0 1.32em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    &-this {
+      font-size: 1rem;
+      color: #292c2f;
+    }
+  }
+
+}

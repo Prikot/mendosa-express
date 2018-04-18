@@ -47,14 +47,14 @@
 
     @include laptop() {
       text-align: left;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     @include tablets() {
       text-align: left;
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     @include phones() {
       padding-left: 1rem;
@@ -71,10 +71,20 @@
       font-size: 1.8rem;
     }
     @include laptop() {
-      font-size: 1.55rem;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
     }
     @include tablets() {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+
+      //margin-bottom: 10px;
+
+    }
+    @include phones() {
       font-size: 1.4rem;
+      margin-bottom: 15px;
+      margin-top: 15px;
     }
   }
 
@@ -83,8 +93,21 @@
     font-family: Roboto, sans-serif;
     line-height: 1.75;
     color: #6a6c6e;
-    height: 150px;
+    height: 260px;
     overflow: hidden;
+
+    @include laptop() {
+      height: 260px;
+    }
+
+    @include tablets() {
+      height: 200px;
+    }
+
+    @include phones() {
+      line-height: 1.5;
+      height: 215px;
+    }
   }
 
   &__link {
@@ -95,10 +118,14 @@
     position: relative;
     margin-bottom: 40px;
 
+    @include phones() {
+      margin-bottom: 25px;
+    }
+
     &:before {
       content: "";
       width: 100%;
-      height: 200px;
+      height: 170px;
       position: absolute;
       bottom: 100%;
       left: 0;
@@ -106,7 +133,19 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0);
 
       @include desktop() {
-        height: 120px;
+        height: 80px;
+      }
+
+      @include laptop() {
+        height: 90px;
+      }
+
+      @include tablets() {
+        height: 60px;
+      }
+
+      @include phones() {
+        height: 40px;
       }
     }
     .tissue__url {
@@ -144,55 +183,70 @@
     &:hover {
       border-width: 15px;
       border-color: rgba(0,0,0,.2);
+
     }
   }
 }
 
 .barhat .tissue__img {
-  background-image: url('/../../images/tissue-page/feb60-1.jpg');
+  background-image: url('/images/tissue-page/feb60-1.jpg');
+
 }
 .tvid .tissue__img {
-  background-image: url('/../../images/tissue-page/feb40-1.jpg');
+  background-image: url('/images/tissue-page/feb40-1.jpg');
+
 }
 .shelk .tissue__img {
-  background-image: url('/../../images/tissue-page/feb44-1.jpg');
+  background-image: url('/images/tissue-page/feb44-1.jpg');
+
 }
 .shifon .tissue__img {
-  background-image: url('/../../images/tissue-page/feb46-1.jpg');
+  background-image: url('/images/tissue-page/feb46-1.jpg');
+
 }
 .gipur .tissue__img {
-  background-image: url('/../../images/tissue-page/feb45-1.jpg');
+  background-image: url('/images/tissue-page/feb45-1.jpg');
+
 }
 .hlopok .tissue__img {
-  background-image: url('/../../images/tissue-page/feb76-1.jpg');
+  background-image: url('/images/tissue-page/feb76-1.jpg');
+
 }
 .jakard .tissue__img {
-  background-image: url('/../../images/tissue-page/feb41-1.jpg');
+  background-image: url('/images/tissue-page/feb41-1.jpg');
+
 }
 .kletka .tissue__img{
-  background-image: url('/../../images/tissue-page/feb29-1.jpg');
+  background-image: url('/images/tissue-page/feb29-1.jpg');
+
 }
 .trikotaj .tissue__img{
-  background-image: url('/../../images/tissue-page/feb75-1.jpg');
+  background-image: url('/images/tissue-page/feb75-1.jpg');
+
 }
 .podkladka .tissue__img{
-  background-image: url('/../../images/tissue-page/feb47-1.jpg');
+  background-image: url('/images/tissue-page/feb47-1.jpg');
+
 }
 .drap .tissue__img{
-  background-image: url('/../../images/tissue-page/feb43-1.jpg');
+  background-image: url('/images/tissue-page/feb43-1.jpg');
+
 }
 .costume .tissue__img{
-  background-image: url('/../../images/tissue-page/feb31-1.jpg');
+  background-image: url('/images/tissue-page/feb31-1.jpg');
+
 }
 .furniture .tissue__img{
-  background-image: url('/../../images/tissue-page/feb48-1.jpg');
+  background-image: url('/images/tissue-page/feb48-1.jpg');
 }
 
 .tissue-reverse {
   .tissue__img {
     order: 1;
   }
+
 }
+
 
 .tissue:nth-child(2n) .tissue__img {
   @include tablets() {
@@ -204,4 +258,13 @@
   @include tablets() {
     order: 0;
   }
+}
+
+.main-tissue-banner {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  max-width: 100%;
 }

@@ -7,11 +7,17 @@ block variables
 block content
   .contact-wrapper
     .contact.about_item-1
-      .contact__img#map
+      .contact__img
+        img.map-pic(src='/images/map-pic-1.png')
       .contact__data
         .contact__adress
           .contact__adress-title Адрес:
-          .contact__adress-this Москва, Ломоносовский проспект, 25
+          .contact__adress-this.adress.
+            Москва, Ломоносовский проспект, 25
+          .contact__adress-this.
+            Вход через пропускной пункт по документам
+          .contact__adress-this.
+            Предварительно позвоните нам!
         .contact__tel
-          .contact__tel-title Телефон:
-          .contact__tel-this 8-910-8884444
+          .contact__tel-title Телефон: &nbsp;
+            a.contact__tel-this(href='tel:+74993946086') 8 (499) 394-60-86
